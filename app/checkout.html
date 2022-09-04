@@ -1,0 +1,287 @@
+---
+title: 付款頁面
+layout: ./app/layout.ejs
+engine: ejs
+current: checkout
+---
+
+<main class="bg-black pt-[72px] sm:pt-[90px]">
+  <!-- 付款進度條 -->
+  <section class="py-6 md:bg-dark md:pt-6 md:pb-4">
+    <div
+      class="relative left-1/2 mb-8 h-0.5 w-2/3 -translate-x-1/2 bg-gray before:absolute before:left-0 before:hidden before:h-0.5 before:w-1/2 before:bg-green after:absolute after:left-0 after:-z-10 after:hidden after:h-0.5 after:w-full after:bg-green md:w-1/2"
+      id="timeline"
+    >
+      <ul class="text-gray">
+        <li
+          id="payStep1"
+          class="absolute -left-7 top-4 text-green before:absolute before:-top-6 before:left-1/2 before:flex before:h-5 before:w-5 before:-translate-x-1/2 before:items-center before:justify-center before:rounded-full before:bg-green before:font-Azeret before:text-12 before:text-white before:content-['1']"
+        >
+          課程報名
+        </li>
+        <li
+          id="payStep2"
+          class="absolute left-1/2 top-4 -translate-x-1/2 before:absolute before:-top-6 before:left-1/2 before:flex before:h-5 before:w-5 before:-translate-x-1/2 before:items-center before:justify-center before:rounded-full before:border before:border-gray before:bg-dark-300 before:font-Azeret before:text-12 before:text-white before:content-['2']"
+        >
+          信用卡付款
+        </li>
+        <li
+          id="payStep3"
+          class="absolute -right-7 top-4 before:absolute before:-top-6 before:left-1/2 before:flex before:h-5 before:w-5 before:-translate-x-1/2 before:items-center before:justify-center before:rounded-full before:border before:border-gray before:bg-dark-300 before:font-Azeret before:text-12 before:text-white before:content-['3']"
+        >
+          付款成功
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 課程報名 -->
+  <section class="bg-black pb-10 md:mt-12" id="lessonSignUp">
+    <div class="container relative">
+      <div
+        class="after:boder-r-0 container relative mb-11 w-full bg-dark-300 p-6 before:absolute before:left-1/2 before:-bottom-3 before:-translate-x-1/2 before:border-12 before:border-b-0 before:border-t-dark-300 after:absolute after:-right-9 after:top-1/2 after:hidden after:-translate-x-1/2 after:border-12 after:border-l-dark-300 md:absolute md:top-1/4 md:left-0 md:w-1/3 md:px-8 md:py-12 md:before:hidden md:after:block"
+      >
+        <figure class="mb-4 md:mb-6">
+          <img
+            class="mx-auto mb-2 w-[100px] rounded-full border-3 border-green"
+            src="./assets/images/teacher01.jpg"
+            alt="teacher img"
+          />
+        </figure>
+        <h2 class="mb-2 text-center font-bold text-white md:mb-1">
+          2022 Python 全攻略｜從入門到實務
+        </h2>
+        <h3 class="mb-2 text-center text-green">前端語言</h3>
+        <p class="text-white">
+          帶領無基礎、文組生、對網頁設計有興趣的人，進入網站工程領域的基礎課，將從最基礎的HTML
+          語法出發。
+        </p>
+      </div>
+      <form
+        action="#"
+        class="mb-12 bg-dark-300 px-6 pt-6 pb-8 text-left text-gray md:ml-auto md:w-4/5 md:bg-dark md:pl-40"
+      >
+        <h2
+          class="mb-6 text-center text-2xl font-bold text-white md:-ml-40 md:mb-12"
+        >
+          課程報名
+        </h2>
+        <h3 class="mb-4 text-center text-lg font-bold text-white md:text-left">
+          選擇付款方式
+        </h3>
+        <ul
+          class="mb-8 grid grid-cols-2 gap-2 text-center text-white lg:grid-cols-4 lg:gap-3"
+        >
+          <li class="w-auto rounded-lg border border-green text-green">
+            <a
+              href="#"
+              class="block w-auto rounded-lg p-4 hover:text-green xl:px-8"
+            >
+              信用卡付款
+            </a>
+          </li>
+          <li class="w-auto rounded-lg border border-white hover:border-green">
+            <a
+              href="#"
+              class="block w-auto rounded-lg p-4 hover:text-green xl:px-8"
+            >
+              超商繳款
+            </a>
+          </li>
+          <li class="w-auto rounded-lg border border-white hover:border-green">
+            <a
+              href="#"
+              class="block w-auto rounded-lg p-4 hover:text-green xl:px-8"
+            >
+              ATM轉帳
+            </a>
+          </li>
+          <li class="w-auto rounded-lg border border-white hover:border-green">
+            <a
+              href="#"
+              class="block w-auto rounded-lg p-4 hover:text-green xl:px-8"
+            >
+              12期分期付款
+            </a>
+          </li>
+        </ul>
+        <h3 class="mb-4 text-center text-lg font-bold text-white md:text-left">
+          訂單資訊
+        </h3>
+
+        <div class="md:flex md:gap-12">
+          <div class="mb-6 md:w-1/2">
+            <label for="name" class="mb-2 block">姓名</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="block w-full rounded-[4px] bg-dark text-white focus:border-white focus:ring-white"
+              placeholder="請輸入姓名"
+            />
+          </div>
+          <div class="mb-6 md:w-1/2">
+            <label for="tel" class="mb-2 block">電話</label>
+            <input
+              type="tel"
+              name="tel"
+              id="tel"
+              class="block w-full rounded-[4px] bg-dark text-white focus:border-white focus:ring-white"
+              placeholder="請輸入電話"
+            />
+          </div>
+        </div>
+        <div class="mb-6">
+          <label for="payEmail" class="mb-2 block">Email</label>
+          <input
+            type="email"
+            name="payEmail"
+            id="payEmail"
+            class="block w-full rounded-[4px] bg-dark text-white focus:border-white focus:ring-white"
+            placeholder="請輸入Email"
+          />
+        </div>
+        <div class="md:flex md:gap-12">
+          <div class="mb-6 md:w-1/2">
+            <label for="lesson" class="mb-2 block">課程</label>
+            <select
+              name="lesson"
+              id="lesson"
+              class="block w-full rounded-[4px] bg-dark text-white focus:border-white focus:ring-white"
+            >
+              <option value="10l50min">10堂50分鐘</option>
+              <option value="15l50min">15堂50分鐘</option>
+              <option value="20l50min">20堂50分鐘</option>
+            </select>
+          </div>
+          <div class="mb-6 text-black md:w-1/2">
+            <label for="datepicker" class="mb-2 block text-gray"
+              >想預約的日期</label
+            >
+            <input
+              type="text"
+              name="datepicker"
+              id="datepicker"
+              class="block w-full rounded-[4px] bg-dark text-white focus:border-white focus:ring-white"
+              placeholder="請選擇日期"
+            />
+          </div>
+        </div>
+        <div class="mb-6">
+          <label for="place" class="mb-2 block">上課地點</label>
+          <input
+            type="text"
+            name="place"
+            id="place"
+            class="block w-full rounded-[4px] bg-dark text-white focus:border-white focus:ring-white"
+            placeholder="請輸入上課地點"
+          />
+        </div>
+        <div class="md:flex md:justify-between">
+          <p class="mb-6 font-Azeret text-lg text-white md:mb-0">NT$1600</p>
+          <div class="rounded-[4px] hover:bg-white">
+            <a
+              class="btn-gradient hover:text-gradient block w-full cursor-pointer !rounded-[4px] py-2 px-8 text-center text-white"
+              href="#"
+              id="goPay"
+            >
+              前往結帳
+            </a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- 信用卡付款 -->
+  <section class="hidden bg-black pb-10 md:mt-12" id="payInfo">
+    <div class="container">
+      <form
+        action="#"
+        class="mb-12 bg-dark px-6 pt-6 pb-8 text-left text-gray md:bg-dark"
+      >
+        <h2 class="mb-6 text-center text-2xl font-bold text-white">
+          信用卡付款
+        </h2>
+        <h3 class="mb-4 text-center text-lg font-bold text-white md:text-left">
+          請輸入信用卡資訊進行付款
+        </h3>
+
+        <div class="mb-6">
+          <label for="cardNumber" class="mb-2 block">信用卡帳號</label>
+          <input
+            type="text"
+            name="cardNumber"
+            id="cardNumber"
+            class="block w-full rounded-[4px] bg-dark text-white focus:border-white focus:ring-white"
+            placeholder="XXXX-XXXX-XXXX-XXXX"
+          />
+        </div>
+        <div class="mb-6">
+          <label for="CSC" class="mb-2 block">安全碼</label>
+          <input
+            type="password"
+            name="CSC"
+            id="CSC"
+            class="block w-full rounded-[4px] bg-dark text-white focus:border-white focus:ring-white"
+            placeholder="***"
+          />
+        </div>
+        <div class="mb-6">
+          <label for="validFrom" class="mb-2 block">有效日期</label>
+          <input
+            type="text"
+            name="validFrom"
+            id="validFrom"
+            class="block w-full rounded-[4px] bg-dark text-white focus:border-white focus:ring-white"
+            placeholder="(MM/YY)"
+          />
+        </div>
+        <div class="md:flex md:justify-between">
+          <p class="mb-6 font-Azeret text-lg text-white md:mb-0">NT$1600</p>
+          <div class="rounded-[4px] hover:bg-white">
+            <a
+              class="btn-gradient hover:text-gradient block w-full cursor-pointer !rounded-[4px] py-2 px-8 text-center text-white"
+              href="#"
+              id="pay"
+            >
+              下一步
+            </a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- 付款成功 -->
+  <section
+    class="hidden h-[calc(100vh-56px-82px-72px)] bg-black pb-10 sm:h-[calc(100vh-90px-82px-72px)] md:h-[calc(100vh-90px-74px-72px)] md:items-center"
+    id="paySuccess"
+  >
+    <div class="container">
+      <div class="bg-dark p-6 text-white md:bg-dark-300 md:px-8 md:py-12">
+        <h2
+          class="mb-6 flex items-center justify-center gap-4 text-center text-2xl font-bold md:mb-12"
+        >
+          <span class="material-symbols-outlined text-5xl text-green">
+            verified
+          </span>
+          完成訂購
+        </h2>
+        <p class="mb-6 md:mb-8">
+          恭喜您已完成<span class="font-bold"
+            >「2022 Python 全攻略｜從入門到實務」</span
+          >課程報名，請注意郵件訊息，家教老師將與您聯繫！
+        </p>
+        <div class="rounded-[4px] hover:bg-white w-fit mx-auto">
+          <a
+            class="btn-gradient hover:text-gradient inline-block cursor-pointer !rounded-[4px] py-2 px-8 text-center text-white"
+            href="class.html"
+          >
+            看看其他課程
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

@@ -1,0 +1,274 @@
+---
+title: 課程列表
+layout: ./app/layout.ejs
+engine: ejs
+current: class
+---
+
+<main class="pt-[72px] sm:pt-[90px]">
+  <!-- 課程列表 -->
+  <section class="bg-dark-200 py-10 sm:py-20">
+    <div class="container">
+      <div id="swiperClass" class="mb-6 overflow-hidden">
+        <ul class="swiper-wrapper flex text-center font-bold text-white">
+          <li class="swiper-slide w-auto rounded-lg border border-green">
+            <a href="#" class="block w-auto rounded-lg p-4 text-green xl:px-8">
+              所有課程
+            </a>
+          </li>
+          <li
+            class="swiper-slide w-auto rounded-lg border border-white hover:border-green"
+          >
+            <a
+              href="#"
+              class="block w-auto rounded-lg p-4 hover:text-green xl:px-8"
+            >
+              行動應用開發
+            </a>
+          </li>
+          <li
+            class="swiper-slide w-auto rounded-lg border border-white hover:border-green"
+          >
+            <a
+              href="#"
+              class="block w-auto rounded-lg p-4 hover:text-green xl:px-8"
+            >
+              資料庫/資料科學
+            </a>
+          </li>
+          <li
+            class="swiper-slide w-auto rounded-lg border border-white hover:border-green"
+          >
+            <a
+              href="#"
+              class="block w-auto rounded-lg p-4 hover:text-green xl:px-8"
+            >
+              前端語言
+            </a>
+          </li>
+          <li
+            class="swiper-slide w-auto rounded-lg border border-white hover:border-green"
+          >
+            <a
+              href="#"
+              class="block w-auto rounded-lg p-4 hover:text-green xl:px-8"
+            >
+              後端語言
+            </a>
+          </li>
+          <li
+            class="swiper-slide w-auto rounded-lg border border-white hover:border-green"
+          >
+            <a
+              href="#"
+              class="block w-auto rounded-lg p-4 hover:text-green xl:px-8"
+            >
+              作業系統與伺服器
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul
+        class="mb-6 grid gap-4 text-left md:mb-12 md:grid-cols-2 md:gap-6 lg:grid-cols-1"
+      >
+        <li
+          class="flex h-full flex-col justify-between rounded-3xl bg-dark-300 px-8 pt-6 text-white hover:ring-1 hover:ring-green md:px-6 lg:flex-row lg:justify-around lg:p-12"
+        >
+          <figure class="mb-6 text-center">
+            <img
+              class="mx-auto mb-2 w-25 rounded-full"
+              src="./assets/images/teacher01.jpg"
+              alt="teacher img"
+            />
+            <figcaption>Belinda</figcaption>
+          </figure>
+          <article>
+            <h2 class="mb-2 text-xl font-bold">基礎前端 - HTML</h2>
+            <span class="mb-2 block text-green">前端語言</span>
+            <p class="mb-8">
+              帶領無基礎的平民老百姓，從最基礎的HTML
+              語法出發，使用最淺顯易懂的語言 <br class="hidden lg:block" />
+              與生活隨處可見的例子，輕鬆進入網頁架設的世界，完成一個基礎的網頁架設。
+            </p>
+          </article>
+          <div class="lg:w-1/6">
+            <h3
+              class="flex flex-row items-center justify-center gap-4 py-4 font-Azeret text-32 md:-mx-6 lg:flex-col lg:gap-1"
+            >
+              <span class="font-sans text-base">50分鐘</span>NT$1600
+            </h3>
+            <div class="mb-8 flex gap-2 lg:mb-0 lg:flex-col">
+              <a
+                class="inline-block w-1/2 rounded-lg py-2 px-8 text-center ring-1 ring-white hover:bg-white hover:text-black lg:w-full lg:p-0 lg:py-2"
+                href="class-details.html"
+              >
+                課程介紹
+              </a>
+              <div
+                class="inline-block w-1/2 rounded-lg text-center hover:bg-white lg:w-full"
+              >
+                <a
+                  href="checkout.html"
+                  class="btn-gradient hover:text-gradient block py-2 px-8 lg:p-0 lg:py-2"
+                >
+                  立即預約
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          class="flex h-full flex-col justify-between rounded-3xl bg-dark-300 px-8 pt-6 text-white hover:ring-1 hover:ring-green md:px-6 lg:flex-row lg:justify-around lg:p-12"
+        >
+          <figure class="mb-6 text-center">
+            <img
+              class="mx-auto mb-2 w-25 rounded-full"
+              src="./assets/images/teacher02.jpg"
+              alt="teacher img"
+            />
+            <figcaption>Guava</figcaption>
+          </figure>
+          <article>
+            <h2 class="mb-2 text-xl font-bold">
+              2022 Python 全攻略｜從入門到實務
+            </h2>
+            <span class="mb-2 block text-green">後端語言</span>
+            <p class="mb-8">
+              Python支援多種程式設計範式，包括函數式、指令式、反射式、結構化和物件導
+              <br class="hidden lg:block" />
+              向程式設計，它擁有動態型別系統和垃圾回收功能，能夠自動管理記憶體使用，本
+              <br class="hidden lg:block" />
+              堂課帶你無痛入門，開發簡單的應用！
+            </p>
+          </article>
+          <div class="lg:w-1/6">
+            <h3
+              class="flex flex-row items-center justify-center gap-4 py-4 font-Azeret text-32 md:-mx-6 lg:flex-col lg:gap-1"
+            >
+              <span class="font-sans text-base">50分鐘</span>NT$2200
+            </h3>
+            <div class="mb-8 flex gap-2 lg:mb-0 lg:flex-col">
+              <a
+                class="inline-block w-1/2 rounded-lg py-2 px-8 text-center ring-1 ring-white hover:bg-white hover:text-black lg:w-full lg:p-0 lg:py-2"
+                href="class-details.html"
+              >
+                課程介紹
+              </a>
+              <div
+                class="inline-block w-1/2 rounded-lg text-center hover:bg-white lg:w-full"
+              >
+                <a
+                  href="checkout.html"
+                  class="btn-gradient hover:text-gradient block py-2 px-8 lg:p-0 lg:py-2"
+                >
+                  立即預約
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          class="flex h-full flex-col justify-between rounded-3xl bg-dark-300 px-8 pt-6 text-white hover:ring-1 hover:ring-green md:px-6 lg:flex-row lg:justify-around lg:p-12"
+        >
+          <figure class="mb-6 text-center">
+            <img
+              class="mx-auto mb-2 w-25 rounded-full"
+              src="./assets/images/teacher03.jpg"
+              alt="teacher img"
+            />
+            <figcaption>Joe</figcaption>
+          </figure>
+          <article>
+            <h2 class="mb-2 text-xl font-bold">
+              活用 Line Bot ｜APP 開發到上架完整實戰攻略
+            </h2>
+            <span class="mb-2 block text-green">行動應用開發</span>
+            <p class="mb-8">
+              Line Bot
+              可用於實用的目的，如客戶服務或資訊獲取，有些聊天機器人會搭載自
+              <br class="hidden lg:block" />
+              然語言處理系統，但大多簡單的系統只會擷取輸入的關鍵字，再從語料庫中找尋最
+              <br class="hidden lg:block" />
+              合適的應答句，本堂課會帶你了解Line Bot 如何結合其他工具的應用。
+            </p>
+          </article>
+          <div class="lg:w-1/6">
+            <h3
+              class="flex flex-row items-center justify-center gap-4 py-4 font-Azeret text-32 md:-mx-6 lg:flex-col lg:gap-1"
+            >
+              <span class="font-sans text-base">50分鐘</span>NT$1800
+            </h3>
+            <div class="mb-8 flex gap-2 lg:mb-0 lg:flex-col">
+              <a
+                class="inline-block w-1/2 rounded-lg py-2 px-8 text-center ring-1 ring-white hover:bg-white hover:text-black lg:w-full lg:p-0 lg:py-2"
+                href="class-details.html"
+              >
+                課程介紹
+              </a>
+              <div
+                class="inline-block w-1/2 rounded-lg text-center hover:bg-white lg:w-full"
+              >
+                <a
+                  href="checkout.html"
+                  class="btn-gradient hover:text-gradient block py-2 px-8 lg:p-0 lg:py-2"
+                >
+                  立即預約
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          class="flex h-full flex-col justify-between rounded-3xl bg-dark-300 px-8 pt-6 text-white hover:ring-1 hover:ring-green md:px-6 lg:flex-row lg:justify-around lg:p-12"
+        >
+          <figure class="mb-6 text-center">
+            <img
+              class="mx-auto mb-2 w-25 rounded-full"
+              src="./assets/images/teacher04.jpg"
+              alt="teacher img"
+            />
+            <figcaption>Lina</figcaption>
+          </figure>
+          <article>
+            <h2 class="mb-2 text-xl font-bold">
+              Linux 零基礎七天入門｜入門到實務
+            </h2>
+            <span class="mb-2 block text-green">作業系統與伺服器</span>
+            <p class="mb-8">
+              Linux是一種自由和開放原始碼的類UNIX作業系統，作業系統中包含了許多使用者
+              <br class="hidden lg:block" />
+              圖形介面和其他實用工具。課程會一步一步帶著你走，讓你能夠從頭開始學習程式
+              <br class="hidden lg:block" />
+              語言的基本語法
+            </p>
+          </article>
+          <div class="lg:w-1/6">
+            <h3
+              class="flex flex-row items-center justify-center gap-4 py-4 font-Azeret text-32 md:-mx-6 lg:flex-col lg:gap-1"
+            >
+              <span class="font-sans text-base">50分鐘</span>NT$1100
+            </h3>
+            <div class="mb-8 flex gap-2 lg:mb-0 lg:flex-col">
+              <a
+                class="inline-block w-1/2 rounded-lg py-2 px-8 text-center ring-1 ring-white hover:bg-white hover:text-black lg:w-full lg:p-0 lg:py-2"
+                href="class-details.html"
+              >
+                課程介紹
+              </a>
+              <div
+                class="inline-block w-1/2 rounded-lg text-center hover:bg-white lg:w-full"
+              >
+                <a
+                  href="checkout.html"
+                  class="btn-gradient hover:text-gradient block py-2 px-8 lg:p-0 lg:py-2"
+                >
+                  立即預約
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
