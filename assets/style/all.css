@@ -2705,6 +2705,10 @@ select {
     left: 29%;
   }
 
+  .xl\:-ml-48 {
+    margin-left: -12rem;
+  }
+
   .xl\:h-\[615px\] {
     height: 615px;
   }
@@ -2736,6 +2740,10 @@ select {
   .xl\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .xl\:pl-48 {
+    padding-left: 12rem;
   }
 
   .xl\:text-left {
